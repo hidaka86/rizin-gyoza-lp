@@ -1,20 +1,23 @@
+<!-- 栄養値の根拠: 成分内容_プロテイン餃子_20260613.pdf(配合設計値)。効果効能の断定表現は使用しない。 -->
 <section class="section section--alt" id="protein">
   <div class="container">
     <div class="section__head reveal">
       <span class="bar"></span>
       <h2>なぜ、格闘家も食べるのか <span class="en">The Protein Logic</span></h2>
+      <span class="rd-badge">管理栄養士監修</span>
     </div>
+    <p class="lead reveal">アスリートの身体づくりに必要な<br /><span class="accent">PFCバランス</span>を、餃子で。</p>
     <div class="logic">
 
       <div class="card logic-block reveal">
         <span class="logic-block__no">1</span>
         <h3>タンパク質の量</h3>
-        <p class="big">1個あたりタンパク質 <b><span data-bind="nutrition.proteinPerPiece">4</span>g</b><i class="kari">仮</i>。10個で <b><span data-bind="nutrition.proteinPerMeal">40</span>g</b><i class="kari">仮</i>。</p>
-        <p class="note">鶏むね肉 <span data-bind="nutrition.chickenEquiv">約200g</span>相当<i class="kari">仮</i>のタンパク質を、サプリではなく&ldquo;食事として&rdquo;摂れます。</p>
-        <div class="pbars" role="img" aria-label="1個あたりのタンパク質比較。RIZIN餃子4g(仮)、一般的な冷凍餃子約2g(仮)。">
+        <p class="big">1個あたりタンパク質 <b><span data-bind="nutrition.proteinPerPiece">4.7</span>g</b>。10個で <b><span data-bind="nutrition.proteinPerMeal">47</span>g</b>。</p>
+        <p class="note">鶏むね肉 <span data-bind="nutrition.chickenEquiv">約200g</span>相当のタンパク質を、サプリではなく&ldquo;食事として&rdquo;摂れます。</p>
+        <div class="pbars" role="img" aria-label="1個あたりのタンパク質比較。RIZIN餃子4.7g、一般的な冷凍餃子約2g(仮)。">
           <div class="pbar pbar--own">
-            <p class="pbar__label">RIZIN餃子 <small>1個あたり(仮)</small></p>
-            <div class="pbar__track"><div class="pbar__fill"><span data-bind="nutrition.proteinPerPiece">4</span>g</div></div>
+            <p class="pbar__label">RIZIN餃子 <small>1個あたり</small></p>
+            <div class="pbar__track"><div class="pbar__fill"><span data-bind="nutrition.proteinPerPiece">4.7</span>g</div></div>
           </div>
           <div class="pbar pbar--other">
             <p class="pbar__label">一般的な冷凍餃子 <small>1個あたり(仮)</small></p>
@@ -25,24 +28,44 @@
 
       <div class="card logic-block reveal">
         <span class="logic-block__no">2</span>
-        <h3>PFCバランス</h3>
+        <h3>PFCバランス — エネルギーの約4割がタンパク質</h3>
         <div class="pfc">
-          <div class="pfc__item pfc__item--hl"><b><span data-bind="nutrition.proteinPerMeal">40</span><small>g</small></b><span>タンパク質<i class="kari">仮</i></span></div>
-          <div class="pfc__item"><b><span data-bind="nutrition.fatPerMeal">12</span><small>g</small></b><span>脂質<i class="kari">仮</i></span></div>
-          <div class="pfc__item"><b><span data-bind="nutrition.kcalPerMeal">350</span><small>kcal</small></b><span>エネルギー<i class="kari">仮</i></span></div>
+          <div class="pfc__item pfc__item--hl"><b><span data-bind="nutrition.proteinPerMeal">47</span><small>g</small></b><span>タンパク質</span></div>
+          <div class="pfc__item"><b><span data-bind="nutrition.fatPerMeal">8</span><small>g</small></b><span>脂質</span></div>
+          <div class="pfc__item"><b><span data-bind="nutrition.kcalPerMeal">460</span><small>kcal</small></b><span>エネルギー</span></div>
         </div>
-        <p class="note">※ 1食10個あたりの設計値(仮)。</p>
+        <p class="note">※ 1食10個あたり(2026年6月時点の配合設計値)。</p>
+        <div class="pfcbar" role="img" aria-label="エネルギー産生栄養素バランス。タンパク質約40%、脂質約15%、炭水化物約45%。">
+          <div class="pfcbar__track">
+            <span class="pfcbar__seg pfcbar__seg--p" style="width: 40%;">P 40%</span>
+            <span class="pfcbar__seg pfcbar__seg--f" style="width: 15%;">F 15%</span>
+            <span class="pfcbar__seg pfcbar__seg--c" style="width: 45%;">C 45%</span>
+          </div>
+          <p class="pfcbar__cap">エネルギー比(設計値より算出)。日本人の食事摂取基準が目標とするタンパク質比率は13〜20%——本品は約40%と、タンパク質に大きく寄せた設計です。</p>
+        </div>
         <p class="note">計量のある競技だからこそ、タンパク質は削れない。脂質は管理したい。RIZIN餃子が高P設計である理由です。</p>
       </div>
 
       <div class="card logic-block reveal">
         <span class="logic-block__no">3</span>
+        <h3>配合から見る、栄養設計</h3>
+        <ul class="facts">
+          <li><b>タンパク源は5種ブレンド</b><span>鶏肉・豚肉・乳たんぱく・大豆たんぱく・チーズを複合配合。さらにコラーゲンペプチドをコンディショニングの＋αとして。</span></li>
+          <li><b>脂質は配合レベルで管理</b><span>動物脂は最小限に抑え、鶏肉主体のあんで1個の脂質0.8g。1gあたり9kcalある脂質を抑えることが、減量期のカロリー管理につながります。</span></li>
+          <li><b>あんの主役はキャベツ</b><span>配合の約3割はキャベツ。野菜の甘みが「餃子として普通にうまい」を支えます。</span></li>
+          <li><b>皮まで栄養設計</b><span>皮には乳たんぱくに加えて小麦外皮粉(ブラン)を配合。あんだけでなく皮も設計の一部です。</span></li>
+          <li><b>塩分は1個0.2g</b><span>10個食べても食塩相当量2.0g。日々の塩分管理と両立しやすい設計です。</span></li>
+        </ul>
+      </div>
+
+      <div class="card logic-block reveal">
+        <span class="logic-block__no">4</span>
         <h3>続けられること<span class="en" style="margin-left:8px; font-size:11px; color:var(--sub);">Repeat</span></h3>
         <p class="big">プロテインや鶏むねは、飽きる。<br />餃子は<b style="font-size:1em;">&ldquo;食べたいもの&rdquo;</b>のまま、タンパク質が摂れる。</p>
         <p class="note">冷凍庫に常備しておけば、トレーニング後4分で1食が完成。無理なく続くことが、身体づくりの土台になります。</p>
       </div>
 
     </div>
-    <p class="disclaimer reveal">※ タンパク質は筋肉など身体の組織の材料となる栄養素です。本商品は特定の効果を保証するものではありません。栄養成分値はすべて開発中の設計値(仮)であり、発売時の表示値と異なる場合があります。</p>
+    <p class="disclaimer reveal">※ タンパク質は筋肉など身体の組織の材料となる栄養素です。本商品は特定の効果を保証するものではありません。栄養成分値は2026年6月時点の配合に基づく設計値であり、製品版の栄養成分表示と異なる場合があります。「一般的な冷凍餃子」の数値は(仮)です。</p>
   </div>
 </section>

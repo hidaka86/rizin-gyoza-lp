@@ -290,6 +290,32 @@ img { max-width: 100%; display: block; }
 .pfc__item--hl b { color: var(--red-ink); }
 .pfc__item span { font-size: 12px; color: var(--sub); }
 
+.rd-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: var(--white); border: 1.5px solid var(--red-ink);
+  color: var(--red-ink); border-radius: 999px;
+  padding: 5px 14px; font-size: 12.5px; font-weight: 800; letter-spacing: 0.04em;
+}
+.rd-badge::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--red-ink); }
+
+.pfcbar { margin-top: 18px; }
+.pfcbar__track {
+  display: flex; height: 30px; border-radius: 8px; overflow: hidden;
+  font-family: var(--font-display); font-weight: 600; font-size: 12.5px; color: var(--white);
+}
+.pfcbar__seg { display: flex; align-items: center; justify-content: center; white-space: nowrap; }
+.pfcbar__seg--p { background: linear-gradient(90deg, var(--red-deep), var(--red-ink)); }
+.pfcbar__seg--f { background: #444B56; }
+.pfcbar__seg--c { background: #B9C0CB; }
+.pfcbar__cap { margin-top: 10px; font-size: 12.5px; color: var(--sub); }
+
+.facts { margin-top: 16px; padding: 0; list-style: none; }
+.facts li { padding: 12px 0; border-top: 1px dashed var(--line); font-size: 14px; }
+.facts li:first-child { border-top: none; padding-top: 4px; }
+.facts b { display: block; font-weight: 800; }
+.facts b::before { content: "◆"; color: var(--red-ink); margin-right: 8px; font-size: 11px; vertical-align: 1px; }
+.facts span { display: block; margin-top: 3px; font-size: 13px; color: var(--sub); padding-left: 19px; }
+
 .disclaimer {
   margin-top: 24px; padding: 14px 18px;
   background: var(--bg-alt); border-radius: var(--radius-sm);

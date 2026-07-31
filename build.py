@@ -3,10 +3,16 @@
 
 usage: python3 build.py
 """
+import hashlib
 import pathlib
 
 ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src" / "sections"
+
+# styles/data/main の内容ハッシュをキャッシュバスターに使う
+V = hashlib.md5(
+    b"".join((ROOT / f).read_bytes() for f in ("styles.css", "data.js", "main.js"))
+).hexdigest()[:8]
 
 # (fragment file, preview file, card title, ds group)
 # 表示順はこのリストが正(ファイル名の番号は目安)
@@ -24,14 +30,14 @@ SECTIONS = [
     ("09-footer.html", "footer.html", "フッター・法務", "セクション"),
 ]
 
-HEAD = """<meta charset="UTF-8" />
+HEAD = f"""<meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex, nofollow" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
-<script src="data.js"></script>"""
+<link rel="stylesheet" href="styles.css?v={V}" />
+<script src="data.js?v={V}"></script>"""
 
 NAV = """<header class="nav" id="nav">
   <div class="nav__inner">
@@ -68,7 +74,7 @@ def build_index():
 <main>
 {body}
 </main>
-<script src="main.js"></script>
+<script src="main.js?v={V}"></script>
 </body>
 </html>
 """
@@ -87,7 +93,7 @@ def build_previews():
 </head>
 <body class="ds-preview">
 {body}
-<script src="main.js"></script>
+<script src="main.js?v={V}"></script>
 </body>
 </html>
 """
