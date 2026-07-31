@@ -21,6 +21,8 @@
   --ph-bg: #E9EBEE;
   --ph-bg-dark: #23262B;
   --line-green: #06C755; /* LINEボタン */
+  --gold: #E8C05A;
+  --gold-deep: #B98B2F;
 
   --font-display: "Oswald", "Noto Sans JP", sans-serif;
   --radius: 16px;
@@ -594,6 +596,95 @@ img { max-width: 100%; display: block; }
 .perk h4 { margin-top: 12px; font-size: 15.5px; font-weight: 800; }
 .perk p { margin-top: 6px; font-size: 13px; color: var(--sub); }
 
+/* ===== RIZIN SUPPORT AWARD ===== */
+.accent-gold { color: var(--gold); }
+.award-flow { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 26px; }
+.award-flow__chip {
+  border: 1px solid var(--line-dark); border-radius: 999px;
+  padding: 8px 16px; font-size: 12.5px; font-weight: 700; color: var(--sub-dark);
+  background: var(--panel); white-space: nowrap;
+}
+.award-flow__chip--win { color: var(--white); border-color: rgba(255, 255, 255, 0.35); }
+.award-flow__chip--gold {
+  color: var(--black); background: linear-gradient(135deg, var(--gold), #F3D98C);
+  border-color: var(--gold); font-weight: 800;
+}
+.award-flow__arr { color: var(--sub-dark); font-weight: 700; }
+
+.awards { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 32px; align-items: stretch; }
+.award {
+  position: relative; background: var(--panel);
+  border: 1px solid var(--line-dark); border-radius: var(--radius);
+  padding: 30px 28px; display: flex; flex-direction: column;
+}
+.award__label { font-size: 12px; letter-spacing: 0.22em; color: var(--sub-dark); }
+.award__title {
+  margin-top: 8px;
+  font-size: clamp(30px, 4vw, 44px); font-weight: 600;
+  line-height: 1.05; letter-spacing: 0.02em;
+}
+.award__title em { font-style: normal; color: var(--red); }
+.award__title--gold em { color: var(--gold); }
+.award__desc { margin-top: 14px; font-size: 13.5px; color: var(--sub-dark); }
+.award__desc b { color: var(--white); }
+
+/* SNS発表モック */
+.sns-mock {
+  margin-top: 20px; background: var(--black);
+  border: 1px solid var(--line-dark); border-radius: 14px; padding: 18px;
+}
+.sns-mock__head { display: flex; align-items: center; gap: 10px; }
+.sns-mock__avatar {
+  display: flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border-radius: 50%;
+  background: var(--red-ink); color: var(--white); font-size: 17px; font-weight: 600;
+}
+.sns-mock__who b { display: block; font-size: 13px; }
+.sns-mock__who span { font-size: 10.5px; color: var(--sub-dark); }
+.sns-mock__body { margin-top: 12px; font-size: 13px; line-height: 1.8; color: rgba(255, 255, 255, 0.88); }
+.sns-mock__media { position: relative; margin-top: 12px; border-radius: 10px; overflow: hidden; }
+.sns-mock__media img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: top center; }
+.sns-mock__tag {
+  position: absolute; left: 10px; bottom: 10px;
+  background: linear-gradient(135deg, var(--gold), #F3D98C); color: var(--black);
+  border-radius: 999px; padding: 5px 14px;
+  font-size: 12px; font-weight: 800; letter-spacing: 0.06em;
+}
+
+/* OF THE YEAR */
+.award--year {
+  border: 1.5px solid var(--gold);
+  background:
+    radial-gradient(420px 260px at 85% 0%, rgba(232, 192, 90, 0.16), transparent 65%),
+    var(--panel);
+}
+.award__ribbon {
+  position: absolute; top: -12px; left: 24px;
+  background: linear-gradient(135deg, var(--gold), #F3D98C); color: var(--black);
+  border-radius: 999px; padding: 4px 14px;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.16em;
+}
+.award__trophy {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 64px; height: 64px; border-radius: 50%;
+  background: rgba(232, 192, 90, 0.12); color: var(--gold);
+  margin: 6px 0 14px;
+}
+.award__trophy svg { width: 36px; height: 36px; }
+.award__invite {
+  margin-top: auto; padding: 16px 18px;
+  border: 1px dashed var(--gold); border-radius: var(--radius-sm);
+  background: rgba(232, 192, 90, 0.07);
+}
+.award__invite b { display: block; font-size: 14.5px; color: var(--gold); }
+.award__invite span { display: block; margin-top: 4px; font-size: 12.5px; color: var(--sub-dark); }
+
+.award-close {
+  margin-top: 44px; text-align: center;
+  font-size: clamp(22px, 3.6vw, 34px); font-weight: 900; line-height: 1.7;
+}
+.award-close em { font-style: normal; color: var(--gold); }
+
 /* 権威付け(選手×管理栄養士) */
 .authority { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 30px; }
 .authority__item {
@@ -695,7 +786,8 @@ img { max-width: 100%; display: block; }
   .loop { padding: 26px 18px; }
   .loop__row { grid-template-columns: 1fr; gap: 14px; justify-items: center; }
   .loop__arrows { width: 100%; max-width: 320px; }
-  .perks-grid, .authority { grid-template-columns: 1fr; }
+  .perks-grid, .authority, .awards { grid-template-columns: 1fr; }
+  .award--year { order: -1; }
   .pfc-visual .pfc-side { width: 100%; }
   .minibar { grid-template-columns: 8em 1fr; }
   .hero--video { min-height: 100svh; }

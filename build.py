@@ -25,6 +25,7 @@ SECTIONS = [
     ("05-single.html", "single.html", "通常購入", "セクション"),
     ("06-plans.html", "plans.html", "サブスクプラン", "セクション"),
     ("06b-oshi.html", "oshi.html", "推し選手サポート", "セクション"),
+    ("06c-award.html", "award.html", "SUPPORT AWARD", "セクション"),
     ("07-tshirt.html", "tshirt.html", "Tシャツ特典", "セクション"),
     ("08-faq.html", "faq.html", "FAQ", "セクション"),
     ("09-footer.html", "footer.html", "フッター・法務", "セクション"),
