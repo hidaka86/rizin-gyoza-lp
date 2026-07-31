@@ -1,0 +1,75 @@
+<!-- @dsCard group="セクション" -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script src="data.js"></script>
+<title>サブスクプラン</title>
+</head>
+<body class="ds-preview">
+<section class="section section--dark on-dark" id="plans">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="bar"></span>
+      <h2>応援は、続けるほど強くなる <span class="en">Membership Plans</span></h2>
+    </div>
+    <p class="body-copy reveal">毎月餃子が届いて、会員だけのTシャツが手に入る。RIZIN餃子のサブスクは「応援の形」です。</p>
+
+    <div class="plans reveal" style="margin-top: 40px;">
+
+      <div class="plan">
+        <p class="plan__name">単品<span class="en">One-time</span></p>
+        <div class="plan__price"><b>¥<span data-bind="price.single">3,980</span></b><small>税込・都度払い<i class="kari">仮</i></small></div>
+        <p class="plan__monthly">&nbsp;</p>
+        <dl class="plan__rows">
+          <div class="plan__row"><dt>お届け</dt><dd>40個×1回</dd></div>
+          <div class="plan__row"><dt>送料</dt><dd>込み</dd></div>
+          <div class="plan__row"><dt>Tシャツ</dt><dd>なし</dd></div>
+          <div class="plan__row"><dt>更新</dt><dd>−</dd></div>
+        </dl>
+        <a href="#single" class="btn btn--ghost">単品購入へ</a>
+      </div>
+
+      <div class="plan">
+        <p class="plan__name">Membersプラン<span class="en">3 Months</span></p>
+        <div class="plan__price"><b>¥<span data-bind="price.membersTotal">11,940</span></b><small>税込・3ヶ月一括<i class="kari">仮</i></small></div>
+        <p class="plan__monthly">月あたり ¥<span data-bind="price.membersMonthly">3,980</span><i class="kari">仮</i></p>
+        <dl class="plan__rows">
+          <div class="plan__row"><dt>お届け</dt><dd>40個×1袋/月<i class="kari">仮</i>×3回</dd></div>
+          <div class="plan__row"><dt>送料</dt><dd>込み</dd></div>
+          <div class="plan__row plan__row--gift"><dt>Tシャツ</dt><dd>入会時にMembers Tシャツ即進呈</dd></div>
+          <div class="plan__row"><dt>更新</dt><dd>自動更新の有無(仮・未確定)</dd></div>
+        </dl>
+        <p class="plan__gift-note">申し込むと、Tシャツがすぐ届く。</p>
+        <a href="#" class="btn btn--primary">Membersに申し込む</a>
+      </div>
+
+      <div class="plan plan--hl">
+        <span class="plan__badge">おすすめ</span>
+        <p class="plan__name">Premiumプラン<span class="en">12 Months</span></p>
+        <div class="plan__price"><b>¥<span data-bind="price.premiumTotal">33,000</span></b><small>税込・年間一括<i class="kari">仮</i></small></div>
+        <p class="plan__monthly">月あたり ¥<span data-bind="price.premiumMonthly">2,750</span><i class="kari">仮</i> ＝ 1食あたり <span data-bind="price.perMeal">約100</span>円<i class="kari">仮</i></p>
+        <dl class="plan__rows">
+          <div class="plan__row"><dt>お届け</dt><dd>40個×1袋/月<i class="kari">仮</i>×12回</dd></div>
+          <div class="plan__row"><dt>送料</dt><dd>無料</dd></div>
+          <div class="plan__row plan__row--gift"><dt>Tシャツ</dt><dd>入会時にPremium Tシャツ即進呈</dd></div>
+          <div class="plan__row"><dt>更新</dt><dd>1年自動更新<i class="kari">仮</i></dd></div>
+        </dl>
+        <p class="plan__gift-note">申し込むと、Tシャツがすぐ届く。</p>
+        <a href="#" class="btn btn--primary">Premiumに申し込む</a>
+      </div>
+
+    </div>
+    <p class="plans-note reveal">※ 価格・お届け内容・更新条件はすべて(仮)です。確定次第、本表記を更新します。すべて税込表記です。</p>
+  </div>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>

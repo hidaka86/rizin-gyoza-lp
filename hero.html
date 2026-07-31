@@ -1,0 +1,38 @@
+<!-- @dsCard group="セクション" -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script src="data.js"></script>
+<title>ファーストビュー</title>
+</head>
+<body class="ds-preview">
+<section class="hero on-dark" id="top">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <div>
+      <p class="hero__eyebrow en">RIZIN OFFICIAL COLLABORATION</p>
+      <h1 class="hero__tagline">Fight.<br /><em>Eat.</em> Repeat.</h1>
+      <p class="hero__sub">食べて、応援する。RIZIN公式 高タンパク餃子。</p>
+      <p class="hero__lead">選手は、食べて戦う。ファンは、食べて応援する。餃子として普通にうまくて、1個あたりタンパク質<span data-bind="nutrition.proteinPerPiece">4</span>g<i class="kari">仮</i>。</p>
+      <div class="hero__actions">
+        <a href="#plans" class="btn btn--primary">サブスクプランを見る</a>
+      </div>
+      <p class="hero__note">単品(<span data-bind="price.single">3,980</span>円・税込)からもお試しいただけます</p>
+    </div>
+    <figure class="hero__photo">
+      <img src="assets/gyoza.jpg" alt="焼きたてのRIZIN餃子" width="640" height="480" loading="eager" />
+      <span class="hero__badge">高タンパク×冷凍餃子</span>
+    </figure>
+  </div>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>

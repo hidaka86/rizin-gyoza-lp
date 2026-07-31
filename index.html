@@ -1,0 +1,343 @@
+<!-- @dsCard group="LP全体" -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script src="data.js"></script>
+<title>RIZIN餃子｜Fight. Eat. Repeat.</title>
+<meta name="description" content="食べて、応援する。RIZIN公式 高タンパク餃子。選手は、食べて戦う。ファンは、食べて応援する。" />
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand"><img src="assets/rizin-logo.png" alt="RIZIN" /><span class="x">×</span><span>餃子</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="メニュー" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks">
+      <a href="#taste">こだわり</a>
+      <a href="#protein">成分</a>
+      <a href="#fighters">選手</a>
+      <a href="#single">単品購入</a>
+      <a href="#faq">FAQ</a>
+      <a href="#plans" class="nav__cta">サブスクプラン</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero on-dark" id="top">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <div>
+      <p class="hero__eyebrow en">RIZIN OFFICIAL COLLABORATION</p>
+      <h1 class="hero__tagline">Fight.<br /><em>Eat.</em> Repeat.</h1>
+      <p class="hero__sub">食べて、応援する。RIZIN公式 高タンパク餃子。</p>
+      <p class="hero__lead">選手は、食べて戦う。ファンは、食べて応援する。餃子として普通にうまくて、1個あたりタンパク質<span data-bind="nutrition.proteinPerPiece">4</span>g<i class="kari">仮</i>。</p>
+      <div class="hero__actions">
+        <a href="#plans" class="btn btn--primary">サブスクプランを見る</a>
+      </div>
+      <p class="hero__note">単品(<span data-bind="price.single">3,980</span>円・税込)からもお試しいただけます</p>
+    </div>
+    <figure class="hero__photo">
+      <img src="assets/gyoza.jpg" alt="焼きたてのRIZIN餃子" width="640" height="480" loading="eager" />
+      <span class="hero__badge">高タンパク×冷凍餃子</span>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="taste">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="bar"></span>
+      <h2>餃子として、普通にうまい <span class="en">The Gyoza Itself</span></h2>
+    </div>
+    <p class="lead reveal">高タンパクは、あとから効いてくる。<br />まず、<span class="accent">今日食べたい餃子</span>であること。</p>
+    <div class="cards-3 reveal">
+      <div class="card feature">
+        <p class="feature__no en">素材</p>
+        <h3>国産素材を使用<i class="kari">仮</i></h3>
+        <p>原料のこだわり文言が入ります(仮・要差し替え)。産地・部位・配合の裏付けをここに記載します。</p>
+      </div>
+      <div class="card feature">
+        <p class="feature__no en">製法</p>
+        <h3>急速冷凍で作りたてを閉じ込める<i class="kari">仮</i></h3>
+        <p>製法のこだわり文言が入ります(仮・要差し替え)。工場・製造工程の裏付けをここに記載します。</p>
+      </div>
+      <div class="card feature">
+        <p class="feature__no en">調理</p>
+        <h3>冷凍のまま焼くだけ4分</h3>
+        <p>解凍不要。フライパンひとつで、お店の味。忙しい日でも失敗なく焼き上がります。</p>
+      </div>
+    </div>
+    <div class="taste-gallery reveal">
+      <figure>
+        <img src="assets/gyoza.jpg" alt="焼き上がりのRIZIN餃子" loading="lazy" />
+        <figcaption>焼き上がり</figcaption>
+      </figure>
+      <figure>
+        <div class="ph">調理工程の写真<br />(撮影素材差し替え)</div>
+        <figcaption>フライパンで4分</figcaption>
+      </figure>
+      <figure>
+        <div class="ph">断面カットの写真<br />(撮影素材差し替え)</div>
+        <figcaption>あんのジューシーさ</figcaption>
+      </figure>
+    </div>
+    <div class="scenes reveal">
+      <span class="scene">普段の食卓に</span>
+      <span class="scene">トレーニング後に</span>
+      <span class="scene">晩酌のお供に</span>
+      <span class="scenes__arrow">→</span>
+      <span class="scenes__result">毎日食べられる餃子</span>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="protein">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="bar"></span>
+      <h2>なぜ、格闘家も食べるのか <span class="en">The Protein Logic</span></h2>
+    </div>
+    <div class="logic">
+
+      <div class="card logic-block reveal">
+        <span class="logic-block__no">1</span>
+        <h3>タンパク質の量</h3>
+        <p class="big">1個あたりタンパク質 <b><span data-bind="nutrition.proteinPerPiece">4</span>g</b><i class="kari">仮</i>。10個で <b><span data-bind="nutrition.proteinPerMeal">40</span>g</b><i class="kari">仮</i>。</p>
+        <p class="note">鶏むね肉 <span data-bind="nutrition.chickenEquiv">約200g</span>相当<i class="kari">仮</i>のタンパク質を、サプリではなく&ldquo;食事として&rdquo;摂れます。</p>
+        <div class="pbars" role="img" aria-label="1個あたりのタンパク質比較。RIZIN餃子4g(仮)、一般的な冷凍餃子約2g(仮)。">
+          <div class="pbar pbar--own">
+            <p class="pbar__label">RIZIN餃子 <small>1個あたり(仮)</small></p>
+            <div class="pbar__track"><div class="pbar__fill"><span data-bind="nutrition.proteinPerPiece">4</span>g</div></div>
+          </div>
+          <div class="pbar pbar--other">
+            <p class="pbar__label">一般的な冷凍餃子 <small>1個あたり(仮)</small></p>
+            <div class="pbar__track"><div class="pbar__fill"><span data-bind="nutrition.competitorProtein">約2</span>g</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card logic-block reveal">
+        <span class="logic-block__no">2</span>
+        <h3>PFCバランス</h3>
+        <div class="pfc">
+          <div class="pfc__item pfc__item--hl"><b><span data-bind="nutrition.proteinPerMeal">40</span><small>g</small></b><span>タンパク質<i class="kari">仮</i></span></div>
+          <div class="pfc__item"><b><span data-bind="nutrition.fatPerMeal">12</span><small>g</small></b><span>脂質<i class="kari">仮</i></span></div>
+          <div class="pfc__item"><b><span data-bind="nutrition.kcalPerMeal">350</span><small>kcal</small></b><span>エネルギー<i class="kari">仮</i></span></div>
+        </div>
+        <p class="note">※ 1食10個あたりの設計値(仮)。</p>
+        <p class="note">計量のある競技だからこそ、タンパク質は削れない。脂質は管理したい。RIZIN餃子が高P設計である理由です。</p>
+      </div>
+
+      <div class="card logic-block reveal">
+        <span class="logic-block__no">3</span>
+        <h3>続けられること<span class="en" style="margin-left:8px; font-size:11px; color:var(--sub);">Repeat</span></h3>
+        <p class="big">プロテインや鶏むねは、飽きる。<br />餃子は<b style="font-size:1em;">&ldquo;食べたいもの&rdquo;</b>のまま、タンパク質が摂れる。</p>
+        <p class="note">冷凍庫に常備しておけば、トレーニング後4分で1食が完成。無理なく続くことが、身体づくりの土台になります。</p>
+      </div>
+
+    </div>
+    <p class="disclaimer reveal">※ タンパク質は筋肉など身体の組織の材料となる栄養素です。本商品は特定の効果を保証するものではありません。栄養成分値はすべて開発中の設計値(仮)であり、発売時の表示値と異なる場合があります。</p>
+  </div>
+</section>
+
+<!-- 注意: 選手の写真・氏名・コメントはすべて公開前に本人・団体の使用許諾取得が前提。許諾済み素材が揃うまでダミーのまま公開しないこと。 -->
+<section class="section section--dark on-dark" id="fighters">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="bar"></span>
+      <h2>RIZINファイターの身体づくりを支える <span class="en">Fighters' Choice</span></h2>
+    </div>
+    <p class="body-copy reveal">日常的に体重と栄養を管理するプロ格闘家たち。その食事に、RIZIN餃子は選ばれています。</p>
+    <div class="voices reveal" style="margin-top: 30px;">
+      <div class="voice">
+        <div class="ph ph--portrait">選手写真<br />(許諾済み素材に差し替え)</div>
+        <p class="voice__name">選手名(仮)</p>
+        <p class="voice__meta en">RIZIN FIGHTER</p>
+        <p class="voice__comment">コメントが入ります(仮)。減量期の食事や普段の活用シーンについてのコメントを掲載予定です。</p>
+      </div>
+      <div class="voice">
+        <div class="ph ph--portrait">選手写真<br />(許諾済み素材に差し替え)</div>
+        <p class="voice__name">選手名(仮)</p>
+        <p class="voice__meta en">RIZIN FIGHTER</p>
+        <p class="voice__comment">コメントが入ります(仮)。減量期の食事や普段の活用シーンについてのコメントを掲載予定です。</p>
+      </div>
+      <div class="voice">
+        <div class="ph ph--portrait">選手写真<br />(許諾済み素材に差し替え)</div>
+        <p class="voice__name">選手名(仮)</p>
+        <p class="voice__meta en">RIZIN FIGHTER</p>
+        <p class="voice__comment">コメントが入ります(仮)。減量期の食事や普段の活用シーンについてのコメントを掲載予定です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="single">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="bar"></span>
+      <h2>まずは味を試したい方へ <span class="en">Single Purchase</span></h2>
+    </div>
+    <div class="single reveal">
+      <div>
+        <p class="lead">餃子40個入り</p>
+        <div class="single__price">
+          <b>¥<span data-bind="price.single">3,980</span></b>
+          <small>税込・送料込み<i class="kari">仮</i></small>
+        </div>
+        <p class="single__note">1食10個×4回分。冷凍庫にストックして、食べたいときに4分で。</p>
+        <div class="single__cta">
+          <a href="#" class="btn btn--outline">単品で購入する</a>
+        </div>
+      </div>
+      <div class="ph">商品パッケージ写真<br />(撮影素材差し替え)</div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark on-dark" id="plans">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="bar"></span>
+      <h2>応援は、続けるほど強くなる <span class="en">Membership Plans</span></h2>
+    </div>
+    <p class="body-copy reveal">毎月餃子が届いて、会員だけのTシャツが手に入る。RIZIN餃子のサブスクは「応援の形」です。</p>
+
+    <div class="plans reveal" style="margin-top: 40px;">
+
+      <div class="plan">
+        <p class="plan__name">単品<span class="en">One-time</span></p>
+        <div class="plan__price"><b>¥<span data-bind="price.single">3,980</span></b><small>税込・都度払い<i class="kari">仮</i></small></div>
+        <p class="plan__monthly">&nbsp;</p>
+        <dl class="plan__rows">
+          <div class="plan__row"><dt>お届け</dt><dd>40個×1回</dd></div>
+          <div class="plan__row"><dt>送料</dt><dd>込み</dd></div>
+          <div class="plan__row"><dt>Tシャツ</dt><dd>なし</dd></div>
+          <div class="plan__row"><dt>更新</dt><dd>−</dd></div>
+        </dl>
+        <a href="#single" class="btn btn--ghost">単品購入へ</a>
+      </div>
+
+      <div class="plan">
+        <p class="plan__name">Membersプラン<span class="en">3 Months</span></p>
+        <div class="plan__price"><b>¥<span data-bind="price.membersTotal">11,940</span></b><small>税込・3ヶ月一括<i class="kari">仮</i></small></div>
+        <p class="plan__monthly">月あたり ¥<span data-bind="price.membersMonthly">3,980</span><i class="kari">仮</i></p>
+        <dl class="plan__rows">
+          <div class="plan__row"><dt>お届け</dt><dd>40個×1袋/月<i class="kari">仮</i>×3回</dd></div>
+          <div class="plan__row"><dt>送料</dt><dd>込み</dd></div>
+          <div class="plan__row plan__row--gift"><dt>Tシャツ</dt><dd>入会時にMembers Tシャツ即進呈</dd></div>
+          <div class="plan__row"><dt>更新</dt><dd>自動更新の有無(仮・未確定)</dd></div>
+        </dl>
+        <p class="plan__gift-note">申し込むと、Tシャツがすぐ届く。</p>
+        <a href="#" class="btn btn--primary">Membersに申し込む</a>
+      </div>
+
+      <div class="plan plan--hl">
+        <span class="plan__badge">おすすめ</span>
+        <p class="plan__name">Premiumプラン<span class="en">12 Months</span></p>
+        <div class="plan__price"><b>¥<span data-bind="price.premiumTotal">33,000</span></b><small>税込・年間一括<i class="kari">仮</i></small></div>
+        <p class="plan__monthly">月あたり ¥<span data-bind="price.premiumMonthly">2,750</span><i class="kari">仮</i> ＝ 1食あたり <span data-bind="price.perMeal">約100</span>円<i class="kari">仮</i></p>
+        <dl class="plan__rows">
+          <div class="plan__row"><dt>お届け</dt><dd>40個×1袋/月<i class="kari">仮</i>×12回</dd></div>
+          <div class="plan__row"><dt>送料</dt><dd>無料</dd></div>
+          <div class="plan__row plan__row--gift"><dt>Tシャツ</dt><dd>入会時にPremium Tシャツ即進呈</dd></div>
+          <div class="plan__row"><dt>更新</dt><dd>1年自動更新<i class="kari">仮</i></dd></div>
+        </dl>
+        <p class="plan__gift-note">申し込むと、Tシャツがすぐ届く。</p>
+        <a href="#" class="btn btn--primary">Premiumに申し込む</a>
+      </div>
+
+    </div>
+    <p class="plans-note reveal">※ 価格・お届け内容・更新条件はすべて(仮)です。確定次第、本表記を更新します。すべて税込表記です。</p>
+  </div>
+</section>
+
+<section class="section" id="tshirt">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="bar"></span>
+      <h2>ここでしか、手に入らない <span class="en">Members Only Tee</span></h2>
+    </div>
+    <div class="tees reveal">
+      <div class="card tee">
+        <div class="ph ph--square">Members Tシャツ<br />(撮影素材差し替え)</div>
+        <h3>Members Tシャツ</h3>
+        <p>会員の証。Membersプラン入会時に即進呈します。</p>
+        <span class="tee__tag">非売品</span>
+      </div>
+      <div class="card tee">
+        <div class="ph ph--square">Premium Tシャツ<br />(撮影素材差し替え)</div>
+        <h3>Premium Tシャツ</h3>
+        <p>応援の証。年次限定デザインで、Premiumプラン入会時に即進呈します。</p>
+        <span class="tee__tag">非売品・年次限定デザイン</span>
+      </div>
+    </div>
+    <p class="tees-note reveal">一般販売なし/EC販売なし/会場販売なし。手に入れる方法は、プラン入会だけ。</p>
+  </div>
+</section>
+
+<section class="section section--alt" id="faq">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="bar"></span>
+      <h2>よくある質問 <span class="en">FAQ</span></h2>
+    </div>
+    <div class="faq reveal">
+      <details>
+        <summary>配送頻度とお届け日を教えてください</summary>
+        <p class="a">Members/Premiumプランは毎月1回、40個入り×1袋(仮)をお届けします。お届け日のご指定・変更方法は準備中です(仮)。</p>
+      </details>
+      <details>
+        <summary>解約・返金はできますか?</summary>
+        <p class="a">一括払いのため、中途解約時の取り扱いは準備中です(仮)。確定次第、本ページと利用規約に明記します。</p>
+      </details>
+      <details>
+        <summary>アレルゲンについて教えてください</summary>
+        <p class="a">原材料・アレルゲン表示は確定次第掲載します(仮)。食物アレルギーをお持ちの方は、公開後の表示を必ずご確認ください。</p>
+      </details>
+      <details>
+        <summary>保存方法と賞味期限は?</summary>
+        <p class="a">冷凍保存(-18℃以下)です。賞味期限は商品パッケージに記載します。冷凍のまま調理できるので、解凍の手間はありません。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark on-dark" id="footer">
+  <div class="container">
+    <div class="line-cta reveal">
+      <p>発売情報・会員特典の最新情報をお届けします。</p>
+      <a href="#" class="btn btn--line">LINE友だち追加</a>
+    </div>
+    <div class="legal reveal">
+      <h3>特定商取引法に基づく表記</h3>
+      <dl>
+        <dt>販売者</dt><dd>株式会社bf2</dd>
+        <dt>運営責任者</dt><dd>(仮)確定次第記載</dd>
+        <dt>所在地</dt><dd>(仮)確定次第記載</dd>
+        <dt>お問い合わせ</dt><dd>(仮)確定次第記載</dd>
+        <dt>販売価格</dt><dd>各商品の表示価格(すべて税込)</dd>
+        <dt>支払方法</dt><dd>(仮)クレジットカード等・確定次第記載</dd>
+        <dt>商品の引渡時期</dt><dd>(仮)確定次第記載</dd>
+        <dt>返品・解約</dt><dd>(仮)確定次第記載</dd>
+      </dl>
+      <p class="legal__note">※ 本ページの価格はすべて税込表記です。(仮)表記の項目は、サービス確定後に正式な内容へ差し替えます。</p>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__brand"><img src="assets/rizin-logo.png" alt="RIZIN" /> <span>× 餃子</span></p>
+      <p class="footer__small">© bf2 Inc.｜本ページはデザイン検討用のドラフトです。</p>
+    </div>
+  </div>
+</section>
+
+</main>
+<script src="main.js"></script>
+</body>
+</html>
