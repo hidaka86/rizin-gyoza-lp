@@ -6,7 +6,22 @@
       <h2>なぜ、格闘家も食べるのか <span class="en">The Protein Logic</span></h2>
       <span class="rd-badge">管理栄養士監修</span>
     </div>
-    <p class="lead reveal">アスリートの身体づくりに必要な<br /><span class="accent">PFCバランス</span>を、餃子で。</p>
+
+    <div class="spec-banner on-dark reveal">
+      <div class="spec-banner__body">
+        <p class="spec-banner__eyebrow en">Athlete Spec</p>
+        <h3>アスリートの身体づくりに必要な<br /><span class="accent">PFCバランス</span>を、餃子で。</h3>
+        <div class="spec-banner__stats">
+          <div><b><span data-bind="nutrition.proteinPerPiece">4.7</span><small>g</small></b><span>タンパク質/個</span></div>
+          <div><b><span data-bind="nutrition.fatPerPiece">0.8</span><small>g</small></b><span>脂質/個</span></div>
+          <div><b><span data-bind="nutrition.kcalPerPiece">46</span><small>kcal</small></b><span>エネルギー/個</span></div>
+        </div>
+      </div>
+      <div class="spec-banner__media" role="img" aria-label="トレーニングに励むアスリート">
+        <img src="assets/training.jpg" alt="" loading="lazy" />
+      </div>
+    </div>
+
     <div class="logic">
 
       <div class="card logic-block reveal">
@@ -24,26 +39,40 @@
             <div class="pbar__track"><div class="pbar__fill"><span data-bind="nutrition.competitorProtein">約2</span>g</div></div>
           </div>
         </div>
+        <p class="pbar-callout">タンパク質、一般的な冷凍餃子の<b>約2.3倍</b><i class="kari">仮</i></p>
       </div>
 
       <div class="card logic-block reveal">
         <span class="logic-block__no">2</span>
         <h3>PFCバランス — エネルギーの約4割がタンパク質</h3>
-        <div class="pfc">
-          <div class="pfc__item pfc__item--hl"><b><span data-bind="nutrition.proteinPerMeal">47</span><small>g</small></b><span>タンパク質</span></div>
-          <div class="pfc__item"><b><span data-bind="nutrition.fatPerMeal">8</span><small>g</small></b><span>脂質</span></div>
-          <div class="pfc__item"><b><span data-bind="nutrition.kcalPerMeal">460</span><small>kcal</small></b><span>エネルギー</span></div>
-        </div>
-        <p class="note">※ 1食10個あたり(2026年6月時点の配合設計値)。</p>
-        <div class="pfcbar" role="img" aria-label="エネルギー産生栄養素バランス。タンパク質約40%、脂質約15%、炭水化物約45%。">
-          <div class="pfcbar__track">
-            <span class="pfcbar__seg pfcbar__seg--p" style="width: 40%;">P 40%</span>
-            <span class="pfcbar__seg pfcbar__seg--f" style="width: 15%;">F 15%</span>
-            <span class="pfcbar__seg pfcbar__seg--c" style="width: 45%;">C 45%</span>
+        <div class="pfc-visual">
+          <div class="donut" role="img" aria-label="エネルギー産生栄養素バランス。タンパク質40%、脂質15%、炭水化物45%。">
+            <div class="donut__center">
+              <b>P40<small>%</small></b>
+              <span>タンパク質<br />エネルギー比</span>
+            </div>
           </div>
-          <p class="pfcbar__cap">エネルギー比(設計値より算出)。日本人の食事摂取基準が目標とするタンパク質比率は13〜20%——本品は約40%と、タンパク質に大きく寄せた設計です。</p>
+          <div class="pfc-side">
+            <ul class="pfc-legend">
+              <li class="pfc-legend__p"><b>タンパク質 40%</b><span><span data-bind="nutrition.proteinPerMeal">47</span>g/10個</span></li>
+              <li class="pfc-legend__f"><b>脂質 15%</b><span><span data-bind="nutrition.fatPerMeal">8</span>g/10個</span></li>
+              <li class="pfc-legend__c"><b>炭水化物 45%</b><span>52g/10個</span></li>
+            </ul>
+            <div class="pfc-compare">
+              <p class="pfc-compare__title">タンパク質エネルギー比のちがい</p>
+              <div class="minibar">
+                <span class="minibar__name">RIZIN餃子</span>
+                <div class="minibar__track"><i class="minibar__fill minibar__fill--own" style="width: 40%;">40%</i></div>
+              </div>
+              <div class="minibar">
+                <span class="minibar__name">食事摂取基準の目標</span>
+                <div class="minibar__track"><i class="minibar__fill minibar__fill--std" style="width: 20%;">13〜20%</i></div>
+              </div>
+              <p class="note" style="margin-top: 10px;">日本人の食事摂取基準(成人)が目標とするタンパク質比率は13〜20%。本品は約40%と、タンパク質に大きく寄せた設計です。</p>
+            </div>
+          </div>
         </div>
-        <p class="note">計量のある競技だからこそ、タンパク質は削れない。脂質は管理したい。RIZIN餃子が高P設計である理由です。</p>
+        <p class="note">※ 1食10個・460kcalあたり(2026年6月時点の配合設計値より算出)。計量のある競技だからこそ、タンパク質は削れない。脂質は管理したい。RIZIN餃子が高P設計である理由です。</p>
       </div>
 
       <div class="card logic-block reveal">
@@ -66,6 +95,6 @@
       </div>
 
     </div>
-    <p class="disclaimer reveal">※ タンパク質は筋肉など身体の組織の材料となる栄養素です。本商品は特定の効果を保証するものではありません。栄養成分値は2026年6月時点の配合に基づく設計値であり、製品版の栄養成分表示と異なる場合があります。「一般的な冷凍餃子」の数値は(仮)です。</p>
+    <p class="disclaimer reveal">※ タンパク質は筋肉など身体の組織の材料となる栄養素です。本商品は特定の効果を保証するものではありません。栄養成分値は2026年6月時点の配合に基づく設計値であり、製品版の栄養成分表示と異なる場合があります。「一般的な冷凍餃子」の数値および倍率は(仮)です。</p>
   </div>
 </section>

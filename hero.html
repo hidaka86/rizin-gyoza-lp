@@ -8,31 +8,31 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=c492e5cb" />
-<script src="data.js?v=c492e5cb"></script>
+<link rel="stylesheet" href="styles.css?v=53db0c2d" />
+<script src="data.js?v=53db0c2d"></script>
 <title>ファーストビュー</title>
 </head>
 <body class="ds-preview">
-<section class="hero on-dark" id="top">
-  <div class="hero__bg" aria-hidden="true"></div>
-  <div class="container hero__inner">
-    <div>
-      <p class="hero__eyebrow en">RIZIN OFFICIAL COLLABORATION</p>
-      <h1 class="hero__tagline">Fight.<br /><em>Eat.</em> Repeat.</h1>
-      <p class="hero__sub">食べて、応援する。RIZIN公式 高タンパク餃子。</p>
-      <p class="hero__lead">選手は、食べて戦う。ファンは、食べて応援する。管理栄養士監修、餃子として普通にうまくて、1個あたりタンパク質<span data-bind="nutrition.proteinPerPiece">4.7</span>g。</p>
-      <div class="hero__actions">
-        <a href="#plans" class="btn btn--primary">サブスクプランを見る</a>
-      </div>
-      <p class="hero__note">単品(<span data-bind="price.single">3,980</span>円・税込)からもお試しいただけます</p>
+<section class="hero hero--video on-dark" id="top">
+  <video class="hero__video" src="assets/hero-sizzle.mp4" autoplay muted loop playsinline preload="auto" poster="assets/gyoza.jpg" aria-hidden="true"></video>
+  <div class="hero__overlay" aria-hidden="true"></div>
+  <div class="container hero__inner--video">
+    <p class="hero__eyebrow en">RIZIN OFFICIAL COLLABORATION</p>
+    <h1 class="hero__tagline">Fight.<br /><em>Eat.</em> Repeat.</h1>
+    <p class="hero__sub">食べて、応援する。RIZIN公式 高タンパク餃子。</p>
+    <p class="hero__lead">選手は、食べて戦う。ファンは、食べて応援する。管理栄養士監修、餃子として普通にうまくて、1個あたりタンパク質<span data-bind="nutrition.proteinPerPiece">4.7</span>g。</p>
+    <div class="hero__stats">
+      <div class="hero__stat"><b><span data-bind="nutrition.proteinPerPiece">4.7</span><small>g</small></b><span>タンパク質/個</span></div>
+      <div class="hero__stat"><b><span data-bind="nutrition.fatPerPiece">0.8</span><small>g</small></b><span>脂質/個</span></div>
+      <div class="hero__stat"><b><span data-bind="nutrition.kcalPerPiece">46</span><small>kcal</small></b><span>エネルギー/個</span></div>
     </div>
-    <figure class="hero__photo">
-      <video src="assets/hero-sizzle.mp4" autoplay muted loop playsinline preload="auto" poster="assets/gyoza.jpg" aria-label="餃子を食べるシーンの動画"></video>
-      <span class="hero__badge">高タンパク×冷凍餃子</span>
-    </figure>
+    <div class="hero__actions">
+      <a href="#plans" class="btn btn--primary">サブスクプランを見る</a>
+    </div>
+    <p class="hero__note">単品(<span data-bind="price.single">3,980</span>円・税込)からもお試しいただけます｜2026.9.10 超RIZIN.5 会場にて先行販売</p>
   </div>
 </section>
 
-<script src="main.js?v=c492e5cb"></script>
+<script src="main.js?v=53db0c2d"></script>
 </body>
 </html>
