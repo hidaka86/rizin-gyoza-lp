@@ -9,13 +9,16 @@ ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src" / "sections"
 
 # (fragment file, preview file, card title, ds group)
+# 表示順はこのリストが正(ファイル名の番号は目安)
 SECTIONS = [
     ("01-hero.html", "hero.html", "ファーストビュー", "セクション"),
+    ("02-concept.html", "concept.html", "コンセプト", "セクション"),
     ("02-taste.html", "taste.html", "餃子としての良さ", "セクション"),
     ("03-protein.html", "protein.html", "成分ロジック", "セクション"),
     ("04-fighters.html", "fighters.html", "選手も愛用", "セクション"),
     ("05-single.html", "single.html", "通常購入", "セクション"),
     ("06-plans.html", "plans.html", "サブスクプラン", "セクション"),
+    ("06b-oshi.html", "oshi.html", "推し選手サポート", "セクション"),
     ("07-tshirt.html", "tshirt.html", "Tシャツ特典", "セクション"),
     ("08-faq.html", "faq.html", "FAQ", "セクション"),
     ("09-footer.html", "footer.html", "フッター・法務", "セクション"),
@@ -37,10 +40,12 @@ NAV = """<header class="nav" id="nav">
       <span></span><span></span><span></span>
     </button>
     <nav class="nav__links" id="navLinks">
+      <a href="#concept">コンセプト</a>
       <a href="#taste">こだわり</a>
       <a href="#protein">成分</a>
       <a href="#fighters">選手</a>
-      <a href="#single">単品購入</a>
+      <a href="#single">単品</a>
+      <a href="#oshi">推し活</a>
       <a href="#faq">FAQ</a>
       <a href="#plans" class="nav__cta">サブスクプラン</a>
     </nav>
