@@ -238,14 +238,27 @@ img { max-width: 100%; display: block; }
   font-weight: 900; line-height: 1.5; letter-spacing: 0.04em;
   margin-bottom: 18px;
 }
-.pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 38px; }
-.pillar-card {
-  background: var(--panel); border: 1px solid var(--line-dark);
-  border-radius: var(--radius); padding: 26px 24px;
+.fer { margin-top: 46px; border-top: 1px solid var(--line-dark); }
+.fer__row {
+  display: grid; grid-template-columns: 1.05fr 0.95fr;
+  gap: 12px 48px; align-items: center;
+  padding: 36px 0; border-bottom: 1px solid var(--line-dark);
 }
-.pillar-card p.pillar-card__en { font-size: 14px; color: var(--red); letter-spacing: 0.2em; margin-top: 0; }
-.pillar-card h3 { margin-top: 10px; font-size: 17px; font-weight: 800; }
-.pillar-card p { margin-top: 8px; font-size: 13.5px; color: var(--sub-dark); }
+.fer__word {
+  font-family: var(--font-display); font-weight: 600; text-transform: uppercase;
+  font-size: clamp(58px, 9.5vw, 118px); line-height: 0.92; letter-spacing: 0.01em;
+  color: var(--white);
+}
+.fer__word span { color: var(--red); }
+.fer__word--red { color: var(--red); }
+.fer__word--red span { color: var(--white); }
+.fer__word--outline {
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.85);
+}
+.fer__word--outline span { color: var(--red); -webkit-text-stroke: 0; }
+.fer__body h3 { font-size: clamp(19px, 2.6vw, 25px); font-weight: 900; line-height: 1.5; }
+.fer__body p { margin-top: 8px; font-size: 14px; color: var(--sub-dark); max-width: 32em; }
 
 /* ===== 餃子としての良さ ===== */
 .cards-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
@@ -669,7 +682,8 @@ img { max-width: 100%; display: block; }
   .nav__cta { margin: 6px 0 0; text-align: center; }
   .nav__toggle { display: flex; }
   .hero__inner { grid-template-columns: 1fr; gap: 32px; padding: 44px 20px 56px; }
-  .cards-3, .taste-gallery, .voices, .plans, .tees, .pillars, .steps { grid-template-columns: 1fr; }
+  .cards-3, .taste-gallery, .voices, .plans, .tees, .steps { grid-template-columns: 1fr; }
+  .fer__row { grid-template-columns: 1fr; gap: 10px; padding: 30px 0; }
   .plan--hl { order: -1; }
   .single { grid-template-columns: 1fr; gap: 26px; }
   .spec-banner { grid-template-columns: 1fr; }
