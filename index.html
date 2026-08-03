@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=1e1ac118" />
-<script src="data.js?v=1e1ac118"></script>
+<link rel="stylesheet" href="styles.css?v=c89b03b6" />
+<script src="data.js?v=c89b03b6"></script>
 <title>RIZIN餃子｜Fight. Eat. Repeat.</title>
 <meta name="description" content="食べて、応援する。RIZIN公式 高タンパク餃子。選手は、食べて戦う。ファンは、食べて応援する。" />
 </head>
@@ -99,8 +99,8 @@
     <div class="cards-3 reveal" style="margin-top: 26px;">
       <div class="card feature">
         <p class="feature__no en">TECH 01</p>
-        <h3>皮まで、タンパク質</h3>
-        <p>皮に乳たんぱくを練り込む独自配合。味を薄めることなく、1個4.7gの高タンパクを実現しました。</p>
+        <h3>タンパク質は、皮に仕込む</h3>
+        <p>乳たんぱくを練り込んだ独自のタンパク質入りの皮。だから、あんは味と肉汁に専念できる。高タンパクとジューシーさの両立は、この構造から生まれます。</p>
       </div>
       <div class="card feature">
         <p class="feature__no en">TECH 02</p>
@@ -138,6 +138,7 @@
 </section>
 
 <!-- 栄養値の根拠: 成分内容_プロテイン餃子_20260613.pdf(配合設計値)。効果効能の断定表現は使用しない。 -->
+<!-- 他社比較(味の素プロテイン餃子・マッスルギョーザ)の数値は提案資料由来の参考値(仮)。公開前に各社公表値の再確認と比較広告の法務チェックが必須。大阪王将のプロテイン餃子は数値入手後に追加可。 -->
 <section class="section section--alt" id="protein">
   <div class="container">
     <div class="section__head reveal">
@@ -168,22 +169,57 @@
         <h3>タンパク質の量</h3>
         <p class="big">1個あたりタンパク質 <b><span data-bind="nutrition.proteinPerPiece">4.7</span>g</b>。10個で <b><span data-bind="nutrition.proteinPerMeal">47</span>g</b>。</p>
         <p class="note">鶏むね肉 <span data-bind="nutrition.chickenEquiv">約200g</span>相当のタンパク質を、サプリではなく&ldquo;食事として&rdquo;摂れます。</p>
-        <div class="pbars" role="img" aria-label="1個あたりのタンパク質比較。RIZIN餃子4.7g、一般的な冷凍餃子約2g(仮)。">
+        <div class="pbars" role="img" aria-label="1個あたりのタンパク質比較。RIZIN餃子4.7g、味の素プロテイン餃子約4.2g(仮)、マッスルギョーザ約2.2g(仮)、一般的な冷凍餃子約2g(仮)。">
           <div class="pbar pbar--own">
             <p class="pbar__label">RIZIN餃子 <small>1個あたり</small></p>
-            <div class="pbar__track"><div class="pbar__fill"><span data-bind="nutrition.proteinPerPiece">4.7</span>g</div></div>
+            <div class="pbar__track"><div class="pbar__fill" style="--w: 100%;"><span data-bind="nutrition.proteinPerPiece">4.7</span>g</div></div>
           </div>
-          <div class="pbar pbar--other">
+          <div class="pbar">
+            <p class="pbar__label">味の素 プロテイン餃子 <small>1個あたり(仮)</small></p>
+            <div class="pbar__track"><div class="pbar__fill" style="--w: 89%;">約4.2g</div></div>
+          </div>
+          <div class="pbar">
+            <p class="pbar__label">マッスルギョーザ <small>1個あたり(仮)</small></p>
+            <div class="pbar__track"><div class="pbar__fill" style="--w: 47%;">約2.2g</div></div>
+          </div>
+          <div class="pbar">
             <p class="pbar__label">一般的な冷凍餃子 <small>1個あたり(仮)</small></p>
-            <div class="pbar__track"><div class="pbar__fill"><span data-bind="nutrition.competitorProtein">約2</span>g</div></div>
+            <div class="pbar__track"><div class="pbar__fill" style="--w: 43%;"><span data-bind="nutrition.competitorProtein">約2</span>g</div></div>
           </div>
         </div>
         <p class="pbar-callout">タンパク質、一般的な冷凍餃子の<b>約2.3倍</b><i class="kari">仮</i></p>
+        <div class="table-scroll">
+          <table class="cmptable">
+            <thead>
+              <tr>
+                <th></th>
+                <th class="own">RIZIN餃子</th>
+                <th>味の素<br /><small>プロテイン餃子(仮)</small></th>
+                <th>マッスル<br /><small>ギョーザ(仮)</small></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">たんぱく質/個</th>
+                <td class="own">4.7g</td>
+                <td>約4.2g</td>
+                <td>約2.2g</td>
+              </tr>
+              <tr>
+                <th scope="row">脂質/個</th>
+                <td class="own">0.8g</td>
+                <td>約1.4g</td>
+                <td>非公開</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">※ 他社商品の数値は公表情報に基づく参考値(仮)です。</p>
       </div>
 
       <div class="card logic-block reveal">
         <span class="logic-block__no">2</span>
-        <h3>PFCバランス — エネルギーの約4割がタンパク質</h3>
+        <h3>PFCバランス — 必要な栄養を、この1食で</h3>
         <div class="pfc-visual">
           <div class="donut" role="img" aria-label="エネルギー産生栄養素バランス。タンパク質40%、脂質15%、炭水化物45%。">
             <div class="donut__center">
@@ -210,6 +246,18 @@
               <p class="note" style="margin-top: 10px;">日本人の食事摂取基準(成人)が目標とするタンパク質比率は13〜20%。本品は約40%と、タンパク質に大きく寄せた設計です。</p>
             </div>
           </div>
+        </div>
+        <div class="daily">
+          <p class="daily__title">1日に必要なたんぱく質の、どこまでを1食で賄えるか <small>(1食10個＝47g)</small></p>
+          <div class="minibar">
+            <span class="minibar__name">成人男性の推奨量 65g/日</span>
+            <div class="minibar__track"><i class="minibar__fill minibar__fill--own" style="width: 72%;">約72%</i></div>
+          </div>
+          <div class="minibar">
+            <span class="minibar__name">成人女性の推奨量 50g/日</span>
+            <div class="minibar__track"><i class="minibar__fill minibar__fill--own" style="width: 94%;">約94%</i></div>
+          </div>
+          <p class="note">※ 日本人の食事摂取基準(2020年版)のたんぱく質推奨量より算出。</p>
         </div>
         <p class="note">※ 1食10個・460kcalあたり(2026年6月時点の配合設計値より算出)。計量のある競技だからこそ、タンパク質は削れない。脂質は管理したい。RIZIN餃子が高P設計である理由です。</p>
       </div>
@@ -593,6 +641,6 @@
 </section>
 
 </main>
-<script src="main.js?v=1e1ac118"></script>
+<script src="main.js?v=c89b03b6"></script>
 </body>
 </html>
