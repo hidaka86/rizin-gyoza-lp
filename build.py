@@ -19,7 +19,7 @@ V = hashlib.md5(
 SECTIONS = [
     ("01-hero.html", "hero.html", "ファーストビュー", "セクション"),
     ("02-concept.html", "concept.html", "コンセプト", "セクション"),
-    ("02-taste.html", "taste.html", "餃子としての良さ", "セクション"),
+    ("02-taste.html", "taste.html", "美味さの独自技術", "セクション"),
     ("03-protein.html", "protein.html", "成分ロジック", "セクション"),
     ("04-fighters.html", "fighters.html", "選手も愛用", "セクション"),
     ("05-single.html", "single.html", "通常購入", "セクション"),
@@ -48,7 +48,7 @@ NAV = """<header class="nav" id="nav">
     </button>
     <nav class="nav__links" id="navLinks">
       <a href="#concept">コンセプト</a>
-      <a href="#taste">こだわり</a>
+      <a href="#taste">美味さ</a>
       <a href="#protein">成分</a>
       <a href="#fighters">選手</a>
       <a href="#single">単品</a>
