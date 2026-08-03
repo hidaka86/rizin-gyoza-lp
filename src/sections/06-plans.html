@@ -1,12 +1,13 @@
+<!-- 2026-07-31変更: Premiumプランは企画未FIXのため一旦削除(サービスが軌道に乗ってから再追加の可能性あり)。投票機能を前面に出してMembers登録を促す構成。 -->
 <section class="section section--dark on-dark" id="plans">
   <div class="container">
     <div class="section__head reveal">
       <span class="bar"></span>
-      <h2>応援は、続けるほど強くなる <span class="en">Membership Plans</span></h2>
+      <h2>応援は、続けるほど強くなる <span class="en">Membership</span></h2>
     </div>
-    <p class="body-copy reveal">毎月餃子が届いて、会員だけのTシャツが手に入る。RIZIN餃子のサブスクは「応援の形」です。</p>
+    <p class="body-copy reveal">毎月餃子が届く。会員だけのTシャツが手に入る。そして、<b style="color: var(--white);">推し選手への投票権</b>。RIZIN餃子のサブスクは「応援の形」です。</p>
 
-    <div class="plans reveal" style="margin-top: 40px;">
+    <div class="plans plans--two reveal" style="margin-top: 40px;">
 
       <div class="plan">
         <p class="plan__name">単品<span class="en">One-time</span></p>
@@ -22,39 +23,23 @@
         <a href="#single" class="btn btn--ghost">単品購入へ</a>
       </div>
 
-      <div class="plan">
+      <div class="plan plan--hl">
+        <span class="plan__badge">おすすめ</span>
         <p class="plan__name">Membersプラン<span class="en">3 Months</span></p>
         <div class="plan__price"><b>¥<span data-bind="price.membersTotal">11,940</span></b><small>税込・3ヶ月一括<i class="kari">仮</i></small></div>
         <p class="plan__monthly">月あたり ¥<span data-bind="price.membersMonthly">3,980</span><i class="kari">仮</i></p>
         <dl class="plan__rows">
           <div class="plan__row"><dt>お届け</dt><dd>40個×1袋/月<i class="kari">仮</i>×3回</dd></div>
           <div class="plan__row"><dt>送料</dt><dd>込み</dd></div>
+          <div class="plan__row plan__row--gift"><dt>推し選手投票</dt><dd><a class="plan__link" href="#oshi">毎月投票 → SUPPORT AWARDへ</a><i class="kari">仮</i></dd></div>
           <div class="plan__row plan__row--gift"><dt>Tシャツ</dt><dd>入会時にMembers Tシャツ即進呈</dd></div>
-          <div class="plan__row"><dt>推し選手投票</dt><dd><a class="plan__link" href="#oshi">できる</a><i class="kari">仮</i></dd></div>
           <div class="plan__row"><dt>更新</dt><dd>自動更新の有無(仮・未確定)</dd></div>
         </dl>
-        <p class="plan__gift-note">申し込むと、Tシャツがすぐ届く。</p>
+        <p class="plan__gift-note">申し込んだ瞬間、投票権とTシャツが手に入る。</p>
         <a href="#" class="btn btn--primary">Membersに申し込む</a>
       </div>
 
-      <div class="plan plan--hl">
-        <span class="plan__badge">おすすめ</span>
-        <p class="plan__name">Premiumプラン<span class="en">12 Months</span></p>
-        <div class="plan__price"><b>¥<span data-bind="price.premiumTotal">33,000</span></b><small>税込・年間一括<i class="kari">仮</i></small></div>
-        <p class="plan__monthly">月あたり ¥<span data-bind="price.premiumMonthly">2,750</span><i class="kari">仮</i> ＝ 1食あたり <span data-bind="price.perMeal">約100</span>円<i class="kari">仮</i></p>
-        <dl class="plan__rows">
-          <div class="plan__row"><dt>お届け</dt><dd>40個×1袋/月<i class="kari">仮</i>×12回</dd></div>
-          <div class="plan__row"><dt>送料</dt><dd>無料</dd></div>
-          <div class="plan__row plan__row--gift"><dt>Tシャツ</dt><dd>入会時にPremium Tシャツ即進呈</dd></div>
-          <div class="plan__row"><dt>推し選手投票</dt><dd><a class="plan__link" href="#oshi">できる</a><i class="kari">仮</i></dd></div>
-          <div class="plan__row"><dt>Premium特典</dt><dd><a class="plan__link" href="#oshi">限定イベント・ミートアップ</a><i class="kari">仮</i></dd></div>
-          <div class="plan__row"><dt>更新</dt><dd>1年自動更新<i class="kari">仮</i></dd></div>
-        </dl>
-        <p class="plan__gift-note">申し込むと、Tシャツがすぐ届く。</p>
-        <a href="#" class="btn btn--primary">Premiumに申し込む</a>
-      </div>
-
     </div>
-    <p class="plans-note reveal">※ 価格・お届け内容・更新条件はすべて(仮)です。確定次第、本表記を更新します。すべて税込表記です。</p>
+    <p class="plans-note reveal">※ 価格・お届け内容・更新条件はすべて(仮)です。確定次第、本表記を更新します。すべて税込表記です。上位プランは今後追加予定です。</p>
   </div>
 </section>
