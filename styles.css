@@ -287,8 +287,8 @@ img { max-width: 100%; display: block; }
 .scenes__result { font-size: 15px; font-weight: 800; color: var(--red-ink); }
 
 /* ===== 成分ロジック ===== */
-.logic { display: grid; gap: 18px; }
-.logic-block { padding: 28px 26px; }
+.logic { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; }
+.logic-block { padding: 28px 26px; min-width: 0; }
 .logic-block__no {
   display: inline-flex; align-items: center; justify-content: center;
   width: 30px; height: 30px; border-radius: 50%;
@@ -352,13 +352,24 @@ img { max-width: 100%; display: block; }
 /* 他社比較テーブル */
 .table-scroll { overflow-x: auto; margin-top: 20px; }
 .cmptable { width: 100%; min-width: 460px; border-collapse: collapse; font-size: 13px; }
-.cmptable th, .cmptable td { padding: 10px 12px; text-align: center; border-top: 1px solid var(--line); }
+.cmptable th, .cmptable td { padding: 12px; text-align: center; border-top: 1px solid var(--line); vertical-align: middle; }
 .cmptable thead th { border-top: none; font-size: 12px; color: var(--sub); font-weight: 700; line-height: 1.4; }
 .cmptable thead th small { font-weight: 500; font-size: 10.5px; }
 .cmptable tbody th { text-align: left; font-size: 12.5px; color: var(--sub); font-weight: 700; }
+.cmptable tbody td { color: var(--sub); font-size: 13.5px; }
 .cmptable .own { background: #FFF1F3; color: var(--red-ink); font-weight: 800; }
-.cmptable thead th.own { border-radius: 8px 8px 0 0; }
-.cmptable td.own { font-family: var(--font-display); font-weight: 600; font-size: 16px; }
+.cmptable thead th.own { border-radius: 8px 8px 0 0; font-size: 14px; }
+.cmptable td.own b {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: 34px; line-height: 1; letter-spacing: 0.01em;
+}
+.cmptable td.own b small { font-size: 16px; margin-left: 1px; }
+.cmptable .win {
+  display: inline-block; margin-left: 8px; vertical-align: 8px;
+  background: var(--red-ink); color: var(--white);
+  border-radius: 999px; padding: 2px 10px;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.06em;
+}
 
 /* 1日必要量カバー率 */
 .daily { margin-top: 20px; padding-top: 16px; border-top: 1px dashed var(--line); }
@@ -369,8 +380,13 @@ img { max-width: 100%; display: block; }
   margin-top: 18px; font-size: 15px; font-weight: 700; text-align: right;
 }
 .pbar-callout b {
-  font-family: var(--font-display); font-weight: 600; font-size: 30px;
-  color: var(--red-ink); margin: 0 2px; letter-spacing: 0.01em;
+  font-family: var(--font-display); font-weight: 600; font-size: 42px;
+  color: var(--red-ink); margin: 0 3px; letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+@media (max-width: 860px) {
+  .pbar-callout { text-align: left; }
+  .pbar-callout b { font-size: 36px; }
 }
 
 /* PFCドーナツ+比較 */
